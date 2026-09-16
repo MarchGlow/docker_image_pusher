@@ -19,6 +19,8 @@ https://cr.console.aliyun.com/<br>
 启用个人实例，创建一个命名空间（**ALIYUN_NAME_SPACE**）
 ![](/doc/命名空间.png)
 
+阿里云镜像容器有区域划分，镜像仓库看不到镜像查看是否在其他区域
+
 访问凭证–>获取环境变量<br>
 用户名（**ALIYUN_REGISTRY_USER**)<br>
 密码（**ALIYUN_REGISTRY_PASSWORD**)<br>
