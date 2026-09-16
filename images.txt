@@ -1,7 +1,7 @@
-nginx
-mysql
-redis
-pgvector/pgvector:pg17
+nginx:1.31
+# mysql:8.4.11
+# redis:8.8
+# pgvector/pgvector:pg17
 #ghcr.io/open-webui/open-webui
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
