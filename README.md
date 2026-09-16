@@ -10,6 +10,25 @@
 作者：**[技术爬爬虾](https://github.com/tech-shrimp/me)**<br>
 B站，抖音，Youtube全网同名，转载请注明作者<br>
 
+# 基于原作者更新逻辑
+- 固定版本：nginx:1.31 → 阿里云存在就跳过。
+  - latest：比较源镜像和阿里云镜像的 digest。
+  - digest 相同 → 跳过
+  - digest 不同 → 重新 pull → tag → push
+```
+  固定 tag
+      ↓
+  远程存在？
+      ├─ 是 → 跳过
+      └─ 否 → pull → push
+
+  latest
+      ↓
+  比较 source digest 和 aliyun digest
+      ├─ 相同 → 跳过
+      └─ 不同 → pull → push
+```
+- 不考虑指定`--platform`参数的重复镜像问题
 ## 使用方式
 
 
