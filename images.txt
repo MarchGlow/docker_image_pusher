@@ -1,5 +1,5 @@
 nginx:1.31
-# mysql:8.4.11
+mysql:8.4.11
 # redis:8.8
 # pgvector/pgvector:pg17
 #ghcr.io/open-webui/open-webui
